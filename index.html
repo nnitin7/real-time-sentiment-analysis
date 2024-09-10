@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentiment Analysis</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Real-Time Sentiment Analysis</h1>
+        <form action="/predict" method="post">
+            <textarea name="text" placeholder="Enter your text here..." rows="5" cols="50"></textarea><br><br>
+            <input type="submit" value="Analyze Sentiment">
+        </form>
+        <h2>{{ prediction }}</h2>
+    </div>
+</body>
+
+</html>
